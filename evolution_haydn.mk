@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,14 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from haydn device
 $(call inherit-product, device/xiaomi/haydn/device.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+
+EVO_BUILD_TYPE := UNOFFICIAL
+EVO_SIGNED := false
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_haydn
+PRODUCT_NAME := evolution_haydn
 PRODUCT_DEVICE := haydn
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2012K11I
