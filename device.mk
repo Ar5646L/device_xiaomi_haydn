@@ -95,6 +95,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/configs/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml
 
+# Audio Moto Dolby
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.audio.dolby.ds2.enabled=false \
+    vendor.audio.dolby.ds2.hardbypass=false \
+    persist.vendor.audio_fx.current=dolby \
+    ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
+
+# Audio Motodolby Config
+PRODUCT_COPY_FILES += \
+    device/xiaomi/haydn/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default
