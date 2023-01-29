@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <!-- ROM maintainer name -->
-    <string name="build_maintainer_summary">SERENADE</string>
+    <string name="build_maintainer_summary">AR</string>
     <string name="build_maintainer_telegram">https://t.me/SERENADE_ar</string>
+</resources>
