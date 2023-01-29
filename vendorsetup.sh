@@ -6,7 +6,7 @@ git clone https://github.com/PixelExperience-Devices/kernel_xiaomi_haydn -b thir
 
 echo 'Cloning Vendor tree [2/4]'
 # Vendor Tree
-git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_xiaomi_haydn -b thirteen vendor/xiaomi/haydn
+git clone https://gitlab.com/omraj12/projectelixir_vendor_xiaomi_haydn.git -b main vendor/xiaomi/haydn
 
 echo 'Cloning Firmware [3/4]'
 # Firmware
